@@ -1,0 +1,127 @@
+body {
+  background-color: #fcfcfc;
+  color: #5c5757;
+  font-family: 'Dosis', sans-serif;
+}
+
+.header {
+  background-color: #ffdfdf;
+}
+
+.logo {
+  width: 4em;
+}
+
+.menu li a {
+  color: #5c5757;
+}
+
+img {
+  width: 100%;
+  border-radius: .5em;
+}
+
+h1 {
+  padding: .5em;
+  text-align: center;
+}
+
+.skills {
+  padding-bottom: 1em;
+}
+
+.text-about {
+  background-color: #ffdfdf;
+  border-color: #fff;
+  padding-top: 0;
+  color: #5c5757;
+  border-radius: .5em;
+}
+
+.text-about p {
+  text-align: justify;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding-bottom: 2em;
+  font-size: 1.3em;
+  font-family: 'Dosis', sans-serif;
+}
+
+figure {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	border: 3px solid #fff;
+}
+
+figure:hover figcaption {
+	opacity: 1;
+	top: 0;
+  border-radius: .5em;
+}
+
+figcaption {
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+figcaption h3 {
+	font-family: 'Dosis', sans-serif;
+	color: #f3b204;
+	padding: 10px 20px;
+	margin-top: 1em;
+}
+
+figcaption p {
+	font-family: 'Dosis', sans-serif;
+	padding: 1px 20px;
+	margin-top: 1em;
+	position: relative;
+	left: 100%;
+	font-size: 16px;
+}
+
+figure:hover h3,figure:hover p {
+	left: 0;
+}
+
+figcaption a {
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 4px .4em;
+  border-radius: .5em;
+  font-family: 'Dosis', sans-serif;
+}
+
+@media screen and (max-width:991px){
+  figcaption h3, figcaption p {
+    margin-top: 0;
+  }
+  figcaption p {
+    padding-top: 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:420px) and (max-width:768px){
+  figcaption h3 {
+    padding: 10px 20px;
+  	margin-top: .5em;
+  }
+  figcaption p {
+    font-size: 14px;
+    padding: 1px 20px;
+  	margin-top: .5em;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .text-about p {
+    text-align: left;
+  }
+}
